@@ -1,0 +1,60 @@
+body {
+  background-color: wheat;
+}
+#box {
+  background-color: rgb(24, 24, 237);
+  color: white;
+}
+.heading {
+  color: red;
+}
+button {
+  background-color: green;
+}
+header {
+  text-align: center;
+  text-decoration: wavy rgb(78, 108, 78) underline;
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+}
+#heading1 {
+  text-decoration: dashed orangered underline;
+  text-transform: uppercase;
+}
+#heading2 {
+  text-decoration: dotted rgb(235, 78, 21) overline;
+  text-align: center;
+  text-transform: lowercase;
+}
+#heading3 {
+  text-decoration: double yellow line-through;
+  text-align: right;
+  text-transform: capitalize;
+}
+a {
+  text-decoration: underline;
+}
+#p1 {
+  font-weight: 100; /* lighter */
+  font-family: fantasy;
+  font-size: 25px;
+  line-height: 35px;
+}
+#p2 {
+  font-weight: 300; /* normal */
+  font-family: serif;
+  font-size: 20px;
+  line-height: 15px;
+}
+#p3 {
+  font-weight: 600; /* bold  */
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+}
+#p4 {
+  font-weight: 900; /* bolder  */
+  font-family: cursive;
+  font-size: 10px;
+  line-height: 20px;
+}

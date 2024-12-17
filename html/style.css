@@ -3,6 +3,7 @@ h1 {
 }
 a {
   color: rgb(232, 49, 232);
+  text-decoration: none;
 }
 body {
   background-color: rgb(235, 243, 146);
