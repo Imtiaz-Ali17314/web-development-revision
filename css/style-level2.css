@@ -4,39 +4,22 @@
 }
 header {
   text-align: center;
-  text-decoration: wavy rgb(232, 104, 104) underline;
+  text-decoration: wavy rgb(49, 44, 44) underline;
 }
-.light {
-  margin: 15px 0 15px 0;
-  text-align: center;
-  height: 100px;
-  width: 100px;
-  border: 3px solid black;
-  border-radius: 50%;
+#navbar {
+  height: 60px;
+  background-color: black;
 }
-#box {
-  width: 150px;
-  background-color: rgb(180, 179, 179);
-  padding: 0 0 0 50px;
-  border: 2px solid black;
+a {
+  color: white;
+  text-decoration: none;
+  margin-right: 200px;
 }
-#red {
-  background-color: red;
-}
-#yellow {
+button {
   background-color: yellow;
 }
-#green {
-  background-color: green;
-}
-#h4 {
-  border: 2px solid black;
-  border-bottom: 0px;
-  padding: 10px 0 0 13px;
-  width: 187px;
-  background-color: gray;
-  font-size: 30px;
-}
-#parentdiv {
-  margin-left: 44%;
+#logo {
+  margin-left: 10px;
+  font-size: 25px;
+  color: orange;
 }
