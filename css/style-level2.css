@@ -2,24 +2,48 @@
   margin: 0px;
   padding: 0px;
 }
-header {
+#level {
   text-align: center;
   text-decoration: wavy rgb(49, 44, 44) underline;
 }
-#navbar {
-  height: 60px;
-  background-color: black;
+#topic {
+  text-align: center;
 }
-a {
-  color: white;
-  text-decoration: none;
-  margin-right: 200px;
+pre {
+  text-align: center;
 }
-button {
+#block {
+  height: 50px;
+  width: 200px;
+  padding-left: 50px;
+  background-color: magenta;
+  display: inline;
+}
+
+.inline {
+  height: 100px;
+  width: 100px;
+  padding: 25px;
+  margin: 25px;
+  display: inline;
+}
+.inlblock {
+  height: 100px;
+  width: 100px;
+  padding: 25px;
+  margin: 25px;
+  display: inline-block;
+}
+#div1 {
+  background-color: red;
+}
+#div2 {
   background-color: yellow;
 }
-#logo {
-  margin-left: 10px;
-  font-size: 25px;
-  color: orange;
+#div3 {
+  background-color: skyblue;
+}
+#div2n {
+  background-color: yellow;
+  display: none;
 }
