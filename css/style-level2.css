@@ -2,6 +2,10 @@
   margin: 0px;
   padding: 0px;
 }
+* {
+  margin: 0px;
+  padding: 0px;
+}
 #level {
   text-align: center;
   text-decoration: wavy rgb(49, 44, 44) underline;
@@ -28,4 +32,30 @@ pre {
 }
 #div3 {
   background-color: rgba(0, 255, 0, 1);
+}
+#navbar {
+  height: 60px;
+  background-color: black;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin-right: 200px;
+}
+button {
+  background-color: yellow;
+}
+#logo {
+  margin-left: 10px;
+  font-size: 25px;
+  color: orange;
+}
+footer {
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+#content {
+  height: 507px;
 }
