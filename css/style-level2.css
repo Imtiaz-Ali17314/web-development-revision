@@ -12,21 +12,7 @@
 pre {
   text-align: center;
 }
-#block {
-  height: 50px;
-  width: 200px;
-  padding-left: 50px;
-  background-color: magenta;
-  display: inline;
-}
 
-.inline {
-  height: 100px;
-  width: 100px;
-  padding: 25px;
-  margin: 25px;
-  display: inline;
-}
 .inlblock {
   height: 100px;
   width: 100px;
@@ -39,11 +25,8 @@ pre {
 }
 #div2 {
   background-color: yellow;
+  visibility: hidden;
 }
 #div3 {
   background-color: skyblue;
-}
-#div2n {
-  background-color: yellow;
-  display: none;
 }
