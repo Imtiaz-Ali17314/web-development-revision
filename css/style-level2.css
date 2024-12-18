@@ -26,16 +26,33 @@ pre {
 }
 #div1 {
   background-color: rgba(0, 255, 0, 0.5);
+  position: absolute;
+  top: 20px;
 }
 #div2 {
   background-color: rgba(0, 255, 0, 0.7);
+  position: fixed;
+  top: 150px;
+  left: 100px;
 }
 #div3 {
   background-color: rgba(0, 255, 0, 1);
+  position: relative;
+  top: 50px;
+  right: 10px;
+}
+#div4 {
+  background-color: rgba(0, 255, 0, 0.3);
+  position: sticky;
+  bottom: 100px;
+  right: 150px;
 }
 #navbar {
   height: 60px;
+  width: 100%;
   background-color: black;
+  position: sticky;
+  top: 0px;
 }
 
 a {
@@ -55,7 +72,9 @@ footer {
   color: white;
   background-color: black;
   text-align: center;
+  position: sticky;
+  bottom: 3px;
 }
 #content {
-  height: 507px;
+  height: 463px;
 }
