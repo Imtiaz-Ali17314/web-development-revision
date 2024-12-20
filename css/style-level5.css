@@ -33,10 +33,7 @@ pre {
   border-radius: 10px;
   padding: 30px 0 0 30px;
 
-  /* transition-property: all;
-  transition-duration: 2s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s; */
-
-  transition: all 2s ease-in-out;
+  transition: all 1s ease-in-out;
+  transform: rotate(360deg);
+  /* transform: scale(2, 1); */
 }
