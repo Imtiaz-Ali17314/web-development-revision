@@ -70,3 +70,37 @@ li {
   width: 100px;
   background-color: darkmagenta;
 }
+
+@media (max-width: 300px) {
+  #outer {
+    background-color: red;
+  }
+  #inner {
+    background-color: blue;
+  }
+}
+@media (min-width: 301px) and (max-width: 600px) {
+  #outer {
+    background-color: yellow;
+  }
+  #inner {
+    background-color: green;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  #outer {
+    background-color: blue;
+  }
+  #inner {
+    background-color: red;
+  }
+}
+@media (min-width: 901px) {
+  #outer {
+    background-color: green;
+  }
+
+  #inner {
+    background-color: yellow;
+  }
+}
