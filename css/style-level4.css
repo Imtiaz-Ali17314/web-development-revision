@@ -1,51 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Css Class</title>
-    <link
-      rel="stylesheet"
-      href="/web-development-revision/css/style-level2.css"
-    />
-  </head>
-  <body>
-    <header>
-      <div id="navbar">
-        <a href="amazaon.in" id="logo">amazon.in</a>
-        <a href="#">Account</a>
-        <a href="#">MyCart</a>
-        <a href="#">Contact Us</a>
-        <input type="text" placeholder="Search amazon.in" />
-        <button>Search</button>
-      </div>
-      <h1 id="level">Level 4</h1>
-      <br />
-      <h3 id="topic">Topic : Flex Box</h3>
-      <br />
-      <pre>
- Display : Flex  /   flex-direction ---> row , row-reverse , column , column-reverse
- Justify Content : flex-start , flex-end , center , space-arround , space-between , space-evenly
- Align-content : flex-start , flex-end , center.
- Flex-wrap : wrap.
- Align-items : flex-start , flex-end , center.
- align-self / flex-grow / flex-shirink.   </pre
-      >
-      <hr />
-      <br />
-    </header>
-    <main>
-      <div id="contener" class="box">
-        <div id="div1" class="box">div 1</div>
-        <div id="div2" class="box">div 2</div>
-        <div id="div3" class="box">div 3</div>
-        <div id="div4" class="box">div 4</div>
-        <div id="div5" class="box">div 5</div>
-      </div>
-    </main>
-    <footer>
-      Made by Imtiaz Ali <br />
-      visit at imtiazali80102@gmail.com
-    </footer>
-  </body>
-</html>
+* {
+  margin: 0px;
+  padding: 0px;
+}
+#navbar {
+  height: 60px;
+  width: 100%;
+  background-color: black;
+  position: sticky;
+  top: 0px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  margin-right: 200px;
+}
+button {
+  background-color: yellow;
+}
+#logo {
+  margin-left: 10px;
+  font-size: 25px;
+  color: orange;
+}
+footer {
+  width: 100%;
+  color: white;
+  background-color: black;
+  text-align: center;
+  position: fixed;
+  bottom: 3px;
+}
+#level {
+  text-align: center;
+  text-decoration: wavy rgb(49, 44, 44) underline;
+}
+#topic {
+  text-align: center;
+}
+pre {
+  text-align: center;
+  font-size: 15px;
+}
+
+/*? Content COde */
+main {
+  text-align: center;
+}
+#nav {
+  height: 50px;
+  background-color: blue;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+li {
+  display: inline;
+}
+#outer {
+  height: 300px;
+  width: 300px;
+  background-color: aqua;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#inner {
+  height: 100px;
+  width: 100px;
+  background-color: darkmagenta;
+}
