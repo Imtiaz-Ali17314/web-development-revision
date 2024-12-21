@@ -61,7 +61,8 @@ pre {
 #inner {
   text-align: center;
   font-size: 100px;
-  font-family: cursive;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-style: italic;
   font-weight: bolder;
   height: 400px;
@@ -73,12 +74,15 @@ pre {
 }
 @keyframes font {
   0% {
+    border: 2px solid blue;
     color: blue;
   }
   50% {
+    border: 2px solid green;
     color: green;
   }
   100% {
+    border: 2px solid red;
     color: red;
   }
 }
