@@ -2,59 +2,6 @@
   margin: 0px;
   padding: 0px;
 }
-* {
-  margin: 0px;
-  padding: 0px;
-}
-#level {
-  text-align: center;
-  text-decoration: wavy rgb(49, 44, 44) underline;
-}
-#topic {
-  text-align: center;
-}
-pre {
-  text-align: center;
-}
-
-.inlblock {
-  height: 100px;
-  width: 100px;
-  padding: 25px;
-  margin: 25px;
-  display: inline-block;
-}
-#div1 {
-  background-color: rgba(0, 255, 0, 0.5);
-  position: absolute;
-  top: 20px;
-  background-image: url("/web-development-revision/css/pic1.jpg");
-  background-size: cover;
-}
-#div2 {
-  background-color: rgba(0, 255, 0, 0.7);
-  position: fixed;
-  top: 150px;
-  left: 100px;
-  background-image: url("/web-development-revision/css/pic2.jpg");
-  background-size: cover;
-}
-#div3 {
-  background-color: rgba(0, 255, 0, 1);
-  position: relative;
-  top: 50px;
-  right: 10px;
-  background-image: url("/web-development-revision/css/pic3.jpg");
-  background-size: cover;
-}
-#div4 {
-  background-color: rgba(0, 255, 0, 0.3);
-  position: sticky;
-  bottom: 100px;
-  right: 150px;
-  background-image: url("/web-development-revision/css/pic4.jpg");
-  background-size: cover;
-}
 #navbar {
   height: 60px;
   width: 100%;
@@ -62,7 +9,6 @@ pre {
   position: sticky;
   top: 0px;
 }
-
 a {
   color: white;
   text-decoration: none;
@@ -77,12 +23,59 @@ button {
   color: orange;
 }
 footer {
+  width: 100%;
   color: white;
   background-color: black;
   text-align: center;
-  position: sticky;
+  position: fixed;
   bottom: 3px;
 }
-#content {
-  height: 463px;
+#level {
+  text-align: center;
+  text-decoration: wavy rgb(49, 44, 44) underline;
+}
+#topic {
+  text-align: center;
+}
+pre {
+  text-align: center;
+  font-size: 15px;
+}
+
+/*? Content COde */
+main {
+  text-align: center;
+}
+#contener {
+  height: 300px;
+  width: 800px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.box {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  display: inline-block;
+}
+#div1 {
+  background-color: rgb(0, 153, 255);
+  align-self: flex-end;
+}
+#div2 {
+  background-color: rgb(0, 106, 255);
+}
+#div3 {
+  background-color: rgb(159, 0, 251);
+  align-self: flex-start;
+}
+#div4 {
+  background-color: rgb(255, 0, 93);
+}
+#div5 {
+  background-color: rgb(255, 0, 0);
+  align-self: flex-end;
 }
