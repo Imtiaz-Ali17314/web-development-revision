@@ -8,13 +8,12 @@ header {
 
 .container {
   border: 3px solid #000;
-  width: 300px;
   height: 300px;
   margin: 50px auto 0;
   padding: 10px;
   display: flex;
-  flex-flow: column wrap;
-  align-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 
 .items {
@@ -28,6 +27,7 @@ header {
 
 .item1 {
   background-color: rgb(252, 6, 215);
+  align-self: stretch;
 }
 
 .item2 {
@@ -40,8 +40,9 @@ header {
 
 .item4 {
   background-color: blue;
+  align-self: flex-end;
 }
-
+/* 
 .item5 {
   background-color: rgb(254, 0, 76);
 }
@@ -56,7 +57,7 @@ header {
 
 .item8 {
   background-color: rgb(64, 156, 2);
-}
+} */
 
 pre {
   font-size: 1rem;
