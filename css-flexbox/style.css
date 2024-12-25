@@ -11,7 +11,7 @@ header {
   margin: 50px auto 0;
   padding: 10px;
   display: flex;
-  flex-wrap: wrap;
+
   margin: 40px 50px 0;
 }
 
@@ -21,12 +21,13 @@ header {
   font-weight: bolder;
   text-align: center;
   padding: 10px;
-  flex-grow: 1;
 }
 
 .item1 {
   background-color: rgb(252, 6, 215);
-  flex-basis: 200px;
+  /* flex-basis: 200px;
+  flex-shrink: 0; */
+  flex: 1 1 auto;
 }
 
 .item2 {
@@ -35,6 +36,7 @@ header {
 
 .item3 {
   background-color: red;
+  flex-grow: 1;
 }
 
 .item4 {
@@ -44,7 +46,7 @@ header {
 .item5 {
   background-color: rgb(254, 0, 76);
 }
-/* 
+
 .item6 {
   background-color: rgb(55, 0, 255);
 }
@@ -55,7 +57,7 @@ header {
 
 .item8 {
   background-color: rgb(64, 156, 2);
-} */
+}
 
 pre {
   font-size: 1rem;
