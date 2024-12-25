@@ -6,67 +6,6 @@ header {
   text-align: center;
 }
 
-.container {
-  border: 3px solid #000;
-  margin: 50px auto 0;
-  padding: 10px;
-  margin: 40px 50px 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.items {
-  color: #fff;
-  font-size: 25px;
-  font-weight: bolder;
-  text-align: center;
-  padding: 10px;
-  height: 100px;
-}
-
-.item1 {
-  background-color: rgb(252, 6, 215);
-}
-
-.item2 {
-  background-color: green;
-  display: flex;
-}
-
-.subitems {
-  background-color: rgb(242, 255, 0);
-  color: green;
-  flex-grow: 1;
-  margin: 3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.item3 {
-  background-color: red;
-}
-
-.item4 {
-  background-color: blue;
-}
-
-.item5 {
-  background-color: rgb(254, 0, 76);
-}
-
-.item6 {
-  background-color: rgb(55, 0, 255);
-}
-
-.item7 {
-  background-color: rgb(255, 77, 0);
-}
-
-.item8 {
-  background-color: rgb(64, 156, 2);
-}
-
 pre {
   font-size: 1rem;
 }
@@ -76,4 +15,64 @@ h3 {
   top: 20px;
   left: 10px;
   text-decoration: underline;
+}
+
+.wrapper {
+  background-color: #f0d3d3;
+  margin: 50px;
+  padding: 20px;
+  list-style: none;
+}
+
+.wrapper li {
+  display: flex;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  justify-content: flex-end;
+}
+
+.wrapper li label {
+  flex: 1;
+}
+
+.wrapper li button {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 300px) and (max-width: 499px) {
+  .wrapper li {
+    display: flex;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+
+  .wrapper li input {
+    flex: 2;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .wrapper li input {
+    flex: 2;
+  }
+}
+
+@media screen and (min-width: 687px) {
+  .wrapper li input {
+    flex: 4;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .wrapper li input {
+    flex: 6;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper li input {
+    flex: 8;
+  }
 }
