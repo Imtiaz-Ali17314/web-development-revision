@@ -8,12 +8,10 @@ header {
 
 .container {
   border: 3px solid #000;
-  height: 200px;
-  width: 400px;
+  width: 600px;
   margin: 50px auto 0;
   padding: 10px;
   display: flex;
-  justify-content: center;
 }
 
 .items {
@@ -22,27 +20,25 @@ header {
   font-weight: bolder;
   text-align: center;
   padding: 10px;
-  margin: 5px;
+  flex-grow: 1;
 }
 
 .item1 {
   background-color: rgb(252, 6, 215);
-  order: 1;
+  flex-grow: 4;
 }
 
 .item2 {
   background-color: green;
-  order: -1;
 }
 
 .item3 {
   background-color: red;
-  order: 2;
 }
 
 .item4 {
   background-color: blue;
-  order: -2;
+  flex-grow: 2;
 }
 
 .item5 {
