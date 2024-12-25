@@ -11,7 +11,6 @@ header {
   margin: 50px auto 0;
   padding: 10px;
   display: flex;
-
   margin: 40px 50px 0;
 }
 
@@ -25,9 +24,7 @@ header {
 
 .item1 {
   background-color: rgb(252, 6, 215);
-  /* flex-basis: 200px;
-  flex-shrink: 0; */
-  flex: 1 1 auto;
+  margin-right: auto;
 }
 
 .item2 {
@@ -36,7 +33,7 @@ header {
 
 .item3 {
   background-color: red;
-  flex-grow: 1;
+  margin-right: auto;
 }
 
 .item4 {
