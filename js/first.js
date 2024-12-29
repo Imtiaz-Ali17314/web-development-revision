@@ -1,6 +1,15 @@
-const profile = {
-  userName: "Imtiaz Ali",
-  followers: 5647,
-  following: 345,
-  info: "Imtiaz's studing js",
-};
+let a = 12;
+
+let b = 5;
+
+console.log("a+b = ", a + b);
+console.log("a-b = ", a - b);
+console.log("a*b = ", a * b);
+console.log("a/b = ", a / b);
+console.log("a%b = ", a % b);
+
+// Pree Increment
+console.log("++a = ", ++a);
+
+// Post Increment
+// console.log("a++ = ", a++);
