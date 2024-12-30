@@ -1,23 +1,37 @@
-// Assignment Operators
-// = , += , -= , *= , %= , **=
+// Comparison Operators
+// Equal to ==
+// Not equal to !=
+// Equal to & type ===
+// Not equal to & type !==
+// >, >=, <, <=
 
 let a = 12;
 let b = 5;
-let c = 8;
-let d = 13;
-let e = 2;
+let c = "12";
 
-// a = a+2    Addition
-console.log("a = ", (a += 3));
+// Compare Value of a and b only. its answer will be only in true or false
+console.log("12 == 5", a == b); //false
 
-// b = b-2    Subtraction
-console.log("b = ", (b -= 2));
+// Compare Value of a and b only. its answer will be only in true or false
+console.log("12 != 5", a != b); //True
 
-// c = c*2    Multiplication
-console.log("c = ", (c *= 2));
+// Compare Value only js converts string into number first then compare
+console.log("12 == '12'", a == c); //true
 
-// d = d%2    module
-console.log("d = ", (d %= 2));
+// Compare Value and also compare its data type
+console.log("12 === '12'", a === c); //false
 
-// e = e**2   Power
-console.log("e = ", (e **= 2));
+// Compare Value and also compare its data type
+console.log("12 !== '12'", a !== c); //True
+
+// Compare Value Greater then
+console.log("12 > 5", a > b); //True
+
+// Compare Value Less then
+console.log("12 < 5", a < b); //False
+
+// Compare Value Greater then and equal to
+console.log("12 >= 5", a >= b); //True
+
+// Compare Value Less then and equal to
+console.log("12 <= 5", a <= b); //False
