@@ -1,37 +1,17 @@
-// Comparison Operators
-// Equal to ==
-// Not equal to !=
-// Equal to & type ===
-// Not equal to & type !==
-// >, >=, <, <=
+// Logical Operators
+// Logical AND &&        Logical OR ||         Logical NOT !
 
 let a = 12;
 let b = 5;
-let c = "12";
 
-// Compare Value of a and b only. its answer will be only in true or false
-console.log("12 == 5", a == b); //false
+console.log("12 > 5 && b = 5", a > b && b === 5); // True
 
-// Compare Value of a and b only. its answer will be only in true or false
-console.log("12 != 5", a != b); //True
+console.log("12 > 5 && b = 6", a > b && b === 6); // False
 
-// Compare Value only js converts string into number first then compare
-console.log("12 == '12'", a == c); //true
+console.log("12 > 5 || b = 6", a > b || b === 6); // True
 
-// Compare Value and also compare its data type
-console.log("12 === '12'", a === c); //false
+console.log("12 = 5 || b = 6", a == b && b === 6); // False
 
-// Compare Value and also compare its data type
-console.log("12 !== '12'", a !== c); //True
+console.log("!( a = b )", !(a == b)); // True
 
-// Compare Value Greater then
-console.log("12 > 5", a > b); //True
-
-// Compare Value Less then
-console.log("12 < 5", a < b); //False
-
-// Compare Value Greater then and equal to
-console.log("12 >= 5", a >= b); //True
-
-// Compare Value Less then and equal to
-console.log("12 <= 5", a <= b); //False
+console.log("!( a > b )", !(a > b)); // False
