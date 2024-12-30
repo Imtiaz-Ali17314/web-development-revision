@@ -1,13 +1,11 @@
 // Loops
-// Lect 3  Paractice Q 3.
+// Lect 3  Paractice Q 2  Guess game
 
-for (let i = 1; i <= 100; i++) {
-  // even numbers
-  if (i % 2 == 0) {
-    console.log("even num :", i);
-  }
-  // odd numbers
-  else {
-    console.log("odd num :", i);
-  }
+let gameNum = "25";
+let userNum = prompt("Enter your guess number: ");
+
+while (userNum != gameNum) {
+  userNum = prompt("You entered wrong number , Guess again. ");
 }
+
+console.log("Congratulations! You guess a correct number.");
