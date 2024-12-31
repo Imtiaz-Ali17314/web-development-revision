@@ -1,9 +1,16 @@
-// Strings
+// Arrays
 
-// Let's paractice Q1
+// Paractice Q1
 
-let fullName = prompt("Enter your full name without spaces: ");
-console.log(fullName);
-let length = fullName.length;
+let marks = [85, 97, 44, 37, 76, 60];
+let sum = 0;
 
-console.log("@" + fullName + length);
+for (val of marks) {
+  sum += val;
+}
+
+console.log(sum);
+console.log(marks.length);
+let avg = sum / marks.length;
+
+console.log(`The average marks of class = ${avg}`);
