@@ -1,11 +1,9 @@
-// Loops
-// Lect 3  Paractice Q 2  Guess game
+// Strings
 
-let gameNum = "25";
-let userNum = prompt("Enter your guess number: ");
+// Let's paractice Q1
 
-while (userNum != gameNum) {
-  userNum = prompt("You entered wrong number , Guess again. ");
-}
+let fullName = prompt("Enter your full name without spaces: ");
+console.log(fullName);
+let length = fullName.length;
 
-console.log("Congratulations! You guess a correct number.");
+console.log("@" + fullName + length);
