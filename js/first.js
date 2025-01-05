@@ -1,17 +1,10 @@
-// Arrays
-//Let's Parctice
+// Functions
 
-let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
-console.log(companies);
+// Function Definition
+function sum(a, b) {
+  return a + b;
+}
 
-let deletedItem = companies.shift();
-console.log("deleted", deletedItem);
-console.log(companies);
-
-console.log("Replace Ola");
-companies.splice(1, 1, "Ola");
-console.log(companies);
-
-console.log("Add Amazone");
-companies.push("Amazon");
-console.log(companies);
+// Function Call
+let val = sum(5, 6);
+console.log(val);
