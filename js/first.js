@@ -1,13 +1,47 @@
-// Arrow Functions      ==> it is new feacture in modern java script
+// Functions
 
-const sum = (a, b) => {
-  return a + b;
+count = 0;
+function countVoweles(str) {
+  for (val of str) {
+    console.log(val);
+    if (
+      val === "a" ||
+      val === "e" ||
+      val === "i" ||
+      val === "o" ||
+      val === "u" ||
+      val === "A" ||
+      val === "E" ||
+      val === "I" ||
+      val === "O" ||
+      val === "U"
+    ) {
+      count++;
+    }
+  }
+  console.log(count);
+}
+countVoweles("ImtiazAli");
+
+count = 0;
+const arrowFun = (str) => {
+  for (val of str) {
+    if (
+      val === "a" ||
+      val === "e" ||
+      val === "i" ||
+      val === "o" ||
+      val === "u" ||
+      val === "A" ||
+      val === "E" ||
+      val === "I" ||
+      val === "O" ||
+      val === "U"
+    ) {
+      count++;
+    }
+  }
+  console.log(count);
 };
 
-console.log(sum(7, 11));
-
-const mul = (a, b) => {
-  return a * b;
-};
-
-console.log(mul(5, 9));
+arrowFun("Hello world! i love js");
