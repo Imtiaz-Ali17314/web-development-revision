@@ -1,12 +1,17 @@
 // Arrays
+//Let's Parctice
 
-// Paractice Q2. For a given array with prices of 5 items -> [250, 645, 300, 900, 50] All items have an offer of 10% OFF on them. Change the array to store final price after
-// applying offer.
+let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+console.log(companies);
 
-let items = [250, 645, 300, 900, 50];
+let deletedItem = companies.shift();
+console.log("deleted", deletedItem);
+console.log(companies);
 
-for (let i = 0; i < items.length; i++) {
-  let offer = items[i] / 10;
-  items[i] = items[i] - offer;
-}
-console.log(items);
+console.log("Replace Ola");
+companies.splice(1, 1, "Ola");
+console.log(companies);
+
+console.log("Add Amazone");
+companies.push("Amazon");
+console.log(companies);
