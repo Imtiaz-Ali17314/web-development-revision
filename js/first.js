@@ -1,10 +1,13 @@
-// Functions
+// Arrow Functions      ==> it is new feacture in modern java script
 
-// Function Definition
-function sum(a, b) {
+const sum = (a, b) => {
   return a + b;
-}
+};
 
-// Function Call
-let val = sum(5, 6);
-console.log(val);
+console.log(sum(7, 11));
+
+const mul = (a, b) => {
+  return a * b;
+};
+
+console.log(mul(5, 9));
