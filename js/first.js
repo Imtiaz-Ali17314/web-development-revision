@@ -1,47 +1,7 @@
-// Functions
+// Functions  ===>  forEach Loop in Array
 
-count = 0;
-function countVoweles(str) {
-  for (val of str) {
-    console.log(val);
-    if (
-      val === "a" ||
-      val === "e" ||
-      val === "i" ||
-      val === "o" ||
-      val === "u" ||
-      val === "A" ||
-      val === "E" ||
-      val === "I" ||
-      val === "O" ||
-      val === "U"
-    ) {
-      count++;
-    }
-  }
-  console.log(count);
-}
-countVoweles("ImtiazAli");
-
-count = 0;
-const arrowFun = (str) => {
-  for (val of str) {
-    if (
-      val === "a" ||
-      val === "e" ||
-      val === "i" ||
-      val === "o" ||
-      val === "u" ||
-      val === "A" ||
-      val === "E" ||
-      val === "I" ||
-      val === "O" ||
-      val === "U"
-    ) {
-      count++;
-    }
-  }
-  console.log(count);
-};
-
-arrowFun("Hello world! i love js");
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+arr.forEach((val) => {
+  let sqr = val * val;
+  console.log(sqr);
+});
