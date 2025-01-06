@@ -1,11 +1,11 @@
-// Functions Methods ===>  map function in Array
+// Functions Methods ===>  Filter function in Array
+// filter function check all indices of array and create a new array for elements that give true value for a filter/ condition.
 
-// Map function is similar to forEach function. forEach function changes the actual array but map does not change actual array. it creates a new array and retrun its value.
-
-let arr = [1, 2, 3, 4, 5, 6];
+let arr = [1, 2, 3, 4, 5, 6, 7, 8];
 console.log(arr);
 
-let newArr = arr.map((val) => {
-  return val * val;
+let evenArr = arr.filter((val) => {
+  return val % 2 === 0;
 });
-console.log(newArr);
+
+console.log("Even numbers in array ", evenArr);
