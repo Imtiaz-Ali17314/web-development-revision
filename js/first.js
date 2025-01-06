@@ -1,11 +1,15 @@
-// Functions Methods ===>  Filter function in Array
-// filter function check all indices of array and create a new array for elements that give true value for a filter/ condition.
+// Functions Methods ===>  Reduce function in Array
+// Reduce function perform some operations and reduce the array into a single value. it retruns a single value.
 
 let arr = [1, 2, 3, 4, 5, 6, 7, 8];
 console.log(arr);
 
-let evenArr = arr.filter((val) => {
-  return val % 2 === 0;
+let largestNo = arr.reduce((prev, curr) => {
+  return prev > curr ? prev : curr;
 });
+console.log("Largest number in the array ", largestNo);
 
-console.log("Even numbers in array ", evenArr);
+let sumArr = arr.reduce((prev, curr) => {
+  return prev + curr;
+});
+console.log("Sum of all numbers in the array ", sumArr);
