@@ -1,7 +1,11 @@
-// Functions  ===>  forEach Loop in Array
+// Functions Methods ===>  map function in Array
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-arr.forEach((val) => {
-  let sqr = val * val;
-  console.log(sqr);
+// Map function is similar to forEach function. forEach function changes the actual array but map does not change actual array. it creates a new array and retrun its value.
+
+let arr = [1, 2, 3, 4, 5, 6];
+console.log(arr);
+
+let newArr = arr.map((val) => {
+  return val * val;
 });
+console.log(newArr);
