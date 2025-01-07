@@ -1,14 +1,10 @@
-#box {
-  height: 250px;
-  width: 100px;
-  border: 1px solid black;
-  margin: 5px;
-  text-align: center;
-  background-color: aquamarine;
+.para {
+  font-size: 25px;
+  color: blue;
+  font-style: italic;
 }
-.toRemove {
-  height: 100px;
-  width: 100px;
-  background-color: aqua;
-  border: 1px solid black;
+
+.newClass {
+  color: white;
+  background-color: magenta;
 }
