@@ -1,32 +1,22 @@
-let div = document.querySelector("div"); // Access node --> div
-console.log(div);
+let mainHeading = document.createElement("h1"); // Create h1 heading at the top
+mainHeading.innerText = "Hello! This is Java Script";
+let body = document.querySelector("body");
+body.prepend(mainHeading);
 
-let id = div.getAttribute("id"); // Access id attribute value
-console.log("Old Id: ", id);
+let itemList = document.createElement("p"); // Create paragraph in the div at top
+itemList.innerText = "item list";
+let ul = document.querySelector("ul");
+ul.before(itemList);
 
-div.setAttribute("id", "div1"); // Change id attribute value
-id = div.getAttribute("id");
-console.log("new Id: ", id);
+let listBtn = document.createElement("button"); // Create button in div at bottom
+listBtn.innerText = "Click me!";
+document.querySelector("div").append(listBtn);
 
-let name = div.getAttribute("name"); // Access name attribute value
-console.log("Old name: ", name);
+let btn = document.createElement("button"); // Create button at page bottom
+btn.innerText = "Submit";
+document.querySelector(".para").after(btn);
 
-div.setAttribute("name", "firstDiv"); // Change name attribute value
-name = div.getAttribute("name");
-console.log("new name: ", name);
+document.querySelector(".toRemove").remove(); // delete div at after listItem div
 
-let p = document.querySelector("p"); // Access node --> p
-console.log(p);
-
-let clas = p.getAttribute("class"); // Access class attribute value
-console.log("old class: ", clas);
-
-p.setAttribute("class", "paragraph"); // Change class attribute value
-clas = p.getAttribute("class");
-console.log("new class: ", clas);
-
-p.style.color = "red"; // Change style with js
-p.style.fontSize = "20px";
-p.style.fontStyle = "italic";
-div.style.backgroundColor = "green";
-div.style.color = "white";
+let div = document.querySelector("div"); // change height of div
+div.style.height = "150px";
