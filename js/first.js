@@ -1,4 +1,12 @@
-let h2 = document.querySelector("h2");
-console.dir(h2.innerText);
+let divs = document.querySelectorAll(".box");
+console.log(divs);
 
-h2.innerText = h2.innerText + " from apnaCollege students";
+// div[0].innerText = "Unique value 1";
+// div[1].innerText = "Unique value 2";
+// div[2].innerText = "Unique value 3";
+
+let indx = 1;
+for (div of divs) {
+  div.innerText = `new unique value is ${indx}`;
+  indx++;
+}
