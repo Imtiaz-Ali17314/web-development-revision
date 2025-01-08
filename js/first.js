@@ -17,13 +17,11 @@ let currMode = "light";
 button.addEventListener("click", (e) => {
   if (currMode == "light") {
     currMode = "dark";
-    console.log(currMode);
 
     body.classList.add("dark");
     body.classList.remove("light");
   } else {
     currMode = "light";
-    console.log(currMode);
 
     body.classList.add("light");
     body.classList.remove("dark");
