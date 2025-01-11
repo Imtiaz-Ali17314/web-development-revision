@@ -1,64 +1,91 @@
-let userScore = 0;
-let compScore = 0;
-
-const choices = document.querySelectorAll(".choice");
-const msg = document.querySelector("#msg");
-
-let userScorePara = document.querySelector("#user-score");
-let compScorePara = document.querySelector("#comp-score");
-
-const genCompChoice = () => {
-  const choices = ["rock", "paper", "scissors"];
-  const randIndex = Math.floor(Math.random() * 3);
-  return choices[randIndex];
+let student = {
+  // Simple Object
+  fullName: "Imtiaz Ali",
+  code: 17314,
+  class: 12,
+  marks: 94,
+  printMarks: function () {
+    console.log("Marks =", this.marks);
+  },
 };
 
-const showWinner = (userWin, userChoice, compChoice) => {
-  if (userWin) {
-    msg.innerText = `You win! your ${userChoice} beats ${compChoice}`;
-    msg.style.backgroundColor = "green";
+// Prototype --> by default property of object.
 
-    userScore++;
-    userScorePara.innerText = userScore;
-  } else {
-    msg.innerText = `You lose.  ${compChoice} beats your ${userChoice}`;
-    msg.style.backgroundColor = "red";
+let employee = {
+  // Simple Object
+  calTax() {
+    console.log("Your tax is 10%. ");
+  },
+};
 
-    compScore++;
-    compScorePara.innerText = compScore;
+let imtiaz = {
+  salry: 20000,
+  calTax() {
+    console.log("Your tax is 20%. ");
+  },
+};
+
+imtiaz.__proto__ = employee; // employee is prototype of obj imtiaz
+
+// Class for Bank
+
+class client {
+  constructor(name, cnic) {
+    console.log("new obj is creating");
+    this.fullName = name;
+    this.CNIC = cnic;
   }
-};
-
-const playGame = (userChoice) => {
-  //Generate computer choce
-  const compChoice = genCompChoice();
-
-  if (userChoice === compChoice) {
-    // Game Draw
-    msg.innerText = "Game was Draw. Play again.";
-    msg.style.backgroundColor = "#081b31";
-  } else {
-    let userWin = true;
-
-    if (userChoice === "rock") {
-      // paper , scissors
-      userWin = compChoice === "paper" ? false : true;
-    } else if (userChoice === "paper") {
-      // rock , scissora
-      userWin = compChoice === "rock" ? true : false;
-    } else {
-      // paper , rock
-      userWin = compChoice === "rock" ? false : true;
-    }
-
-    showWinner(userWin, userChoice, compChoice);
+  credit() {
+    console.log("you credit your money.");
   }
-};
+  debit() {
+    console.log("you debit your money.");
+  }
+}
 
-choices.forEach((choice) => {
-  choice.addEventListener("click", () => {
-    let userChoice = choice.getAttribute("id");
+let hassan = new client("Hassan", 7130398050238);
+console.log(hassan);
+let mir = new client("Mir", 7104580958649);
+console.log(mir);
+let imtiazAli = new client("Imtiaz Ali", 71056845787538);
+console.log(imtiazAli);
 
-    playGame(userChoice);
-  });
-});
+// Inheritance in JS       >>> keyword for inheritance  --->  extends
+
+class person {
+  constructor(name) {
+    this.specie = "homo sepien";
+    this.name = name;
+  }
+  eat() {
+    console.log("eat");
+  }
+  sleep() {
+    console.log("sleep");
+  }
+  work() {
+    console.log("do nothing");
+  }
+}
+
+class engineer extends person {
+  // inherit person properties as parent into engineer class as child
+  work() {
+    console.log("problem solving and do something.");
+  }
+}
+
+let engObj = new engineer();
+
+// Super keyword  --> which is used to call parent construtor from child constructor
+
+class doctor extends person {
+  constructor(name) {
+    super(name); // ---> call to parent constructor and pass name to person constructor.
+  }
+  work() {
+    console.log("solving health problems and do something.");
+  }
+}
+
+let docObj = new doctor("ImtiazAli");
