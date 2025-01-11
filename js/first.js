@@ -1,91 +1,31 @@
-let student = {
-  // Simple Object
-  fullName: "Imtiaz Ali",
-  code: 17314,
-  class: 12,
-  marks: 94,
-  printMarks: function () {
-    console.log("Marks =", this.marks);
-  },
-};
+// Q.1 You are creating a website for your college. Create a class User with 2 properties, name & email. It also has a method called viewData( ) that allows user to view website data.
 
-// Prototype --> by default property of object.
+let data = "Secret Information";
 
-let employee = {
-  // Simple Object
-  calTax() {
-    console.log("Your tax is 10%. ");
-  },
-};
-
-let imtiaz = {
-  salry: 20000,
-  calTax() {
-    console.log("Your tax is 20%. ");
-  },
-};
-
-imtiaz.__proto__ = employee; // employee is prototype of obj imtiaz
-
-// Class for Bank
-
-class client {
-  constructor(name, cnic) {
-    console.log("new obj is creating");
-    this.fullName = name;
-    this.CNIC = cnic;
-  }
-  credit() {
-    console.log("you credit your money.");
-  }
-  debit() {
-    console.log("you debit your money.");
-  }
-}
-
-let hassan = new client("Hassan", 7130398050238);
-console.log(hassan);
-let mir = new client("Mir", 7104580958649);
-console.log(mir);
-let imtiazAli = new client("Imtiaz Ali", 71056845787538);
-console.log(imtiazAli);
-
-// Inheritance in JS       >>> keyword for inheritance  --->  extends
-
-class person {
-  constructor(name) {
-    this.specie = "homo sepien";
+class User {
+  constructor(name, email) {
     this.name = name;
+    this.email = email;
   }
-  eat() {
-    console.log("eat");
-  }
-  sleep() {
-    console.log("sleep");
-  }
-  work() {
-    console.log("do nothing");
+
+  viewData() {
+    console.log("website data:", data);
   }
 }
 
-class engineer extends person {
-  // inherit person properties as parent into engineer class as child
-  work() {
-    console.log("problem solving and do something.");
+let stu1 = new User("Imtiaz", "imt@gmail.com");
+let stu2 = new User("Abbas", "abs@gmail.com");
+let tec1 = new User("Techer1", "teac@gmail.com");
+
+// Q.2 Create a new class called Admin which inherits from User. Add a new method called editData to Admin that allows it to edit website data.
+
+class Admin extends User {
+  constructor(name, email) {
+    super(name, email);
+  }
+  editData() {
+    data = "some new data";
   }
 }
 
-let engObj = new engineer();
-
-// Super keyword  --> which is used to call parent construtor from child constructor
-
-class doctor extends person {
-  constructor(name) {
-    super(name); // ---> call to parent constructor and pass name to person constructor.
-  }
-  work() {
-    console.log("solving health problems and do something.");
-  }
-}
-
-let docObj = new doctor("ImtiazAli");
+let admin1 = new Admin("admin1", "admin@gmial.com");
