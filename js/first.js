@@ -1,31 +1,113 @@
-// Q.1 You are creating a website for your college. Create a class User with 2 properties, name & email. It also has a method called viewData( ) that allows user to view website data.
+// function api() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("weather data");
+//       resolve(200);
+//     }, 2000);
+//   });
+// }
 
-let data = "Secret Information";
+// async function getWeatherData(params) {
+//   await api();
+//   await api();
+// }
 
-class User {
-  constructor(name, email) {
-    this.name = name;
-    this.email = email;
-  }
+// function asyncFunc1() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("Data1");
+//       resolve("success");
+//     }, 2000);
+//   });
+// }
 
-  viewData() {
-    console.log("website data:", data);
-  }
+// function asyncFunc2() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("Data2");
+//       resolve("success");
+//     }, 2000);
+//   });
+// }
+// //  promise Chain
+// console.log("fetching data1 .....");
+// asyncFunc1().then((res) => {
+//   console.log("fetching data2  .....");
+//   asyncFunc2().then((res) => {});
+// });
+
+// const getNewPromise = () => {
+//   return new Promise((resolve, reject) => {
+//     console.log("hy! I am a promise");
+//     resolve("successfully");
+//     // reject("network error");
+//   });
+// };
+
+// let promise = getNewPromise();
+// // if promise resolve
+// promise.then((res) => {
+//   console.log("fulFilled", res);
+// });
+// // if promise reject
+// promise.catch((err) => {
+//   console.log("rejected", err);
+// });
+
+function getData(idData, getNextData) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("Data", idData);
+      resolve("successfully get data");
+      if (getNextData) {
+        getNextData();
+      }
+    }, 2000);
+  });
 }
 
-let stu1 = new User("Imtiaz", "imt@gmail.com");
-let stu2 = new User("Abbas", "abs@gmail.com");
-let tec1 = new User("Techer1", "teac@gmail.com");
+// Async await
 
-// Q.2 Create a new class called Admin which inherits from User. Add a new method called editData to Admin that allows it to edit website data.
+// async function getAllData() {
+//   console.log("fetching data1 ......");
+//   await getData(1);
+//   console.log("fetching data2 ......");
+//   await getData(2);
+//   console.log("fetching data3 ......");
+//   await getData(3);
+// }
 
-class Admin extends User {
-  constructor(name, email) {
-    super(name, email);
-  }
-  editData() {
-    data = "some new data";
-  }
-}
+// IIFE
 
-let admin1 = new Admin("admin1", "admin@gmial.com");
+(async function getAllData() {
+  console.log("fetching data1 ......");
+  await getData(1);
+  console.log("fetching data2 ......");
+  await getData(2);
+  console.log("fetching data3 ......");
+  await getData(3);
+})();
+
+// // Promise Chain
+// console.log("fetching data 1");
+// getData(1)
+//   .then((res) => {
+//     console.log("fetching data 2");
+//     return getData(2);
+//   })
+//   .then((res) => {
+//     console.log("fetching data 3");
+//     return getData(3);
+//   })
+//   .then((res) => {
+//     console.log("fetching data 4");
+//     return getData(4);
+//   });
+
+// //  Callback hell
+
+// getData(1, () => {
+//   getData(2, () => {
+//     getData(3);
+//   });
+// });
