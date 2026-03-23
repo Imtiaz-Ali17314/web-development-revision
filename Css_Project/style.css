@@ -19,7 +19,7 @@
 }
 
 .logo {
-  background-image: url(/web-development-revision/Css_Project/amazon_logo.png);
+  background-image: url(./amazon_logo.png);
   background-size: cover;
   height: 50px;
   width: 100%;
@@ -184,7 +184,7 @@ span {
 /** Hero Section **/
 
 .hero-section {
-  background-image: url(/web-development-revision//Css_Project/hero-image.jpg);
+  background-image: url(./hero-image.jpg);
   background-size: cover;
   height: 260px;
 }
@@ -271,7 +271,7 @@ ul a {
 }
 
 .logo {
-  background-image: url(/web-development-revision/Css_Project/amazon_logo.png);
+  background-image: url(./amazon_logo.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 50px;
