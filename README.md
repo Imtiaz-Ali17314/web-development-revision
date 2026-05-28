@@ -109,7 +109,7 @@ web-development-revision/
 Because this is a static sandbox repository, compile tools are not required. You can launch pages using standard browser tools:
 1.  **Clone the Repository**:
     ```bash
-    git clone https://github.com/your-username/web-development-revision.git
+    git clone https://github.com/Imtiaz-Ali17314/web-development-revision.git
     cd web-development-revision
     ```
 2.  **Open in Local Browser**:
